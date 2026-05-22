@@ -1,0 +1,61 @@
+body {
+  background-color: #0A0A0B;
+  color: #e5e2e3;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(22, 22, 24, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border: 1px solid rgba(113, 205, 255, 0.4);
+  background: rgba(22, 22, 24, 0.6);
+}
+
+.neon-glow-blue {
+  box-shadow: 0 0 30px rgba(113, 205, 255, 0.2);
+}
+
+.neon-glow-orange {
+  box-shadow: 0 0 30px rgba(255, 138, 0, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #71cdff, #ff8a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-blur-blob {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.circular-progress {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #131314;
+  border-radius: 50%;
+}
